@@ -6,8 +6,8 @@
 
 :root {
   /* ground */
-  --bg: #f5ead8;
-  --surface: #ebddc5;
+  --bg: #d8bede;
+  --surface: #aceb94;
   --text: #201e1d;
   --divider: color-mix(in srgb, #201e1d 16%, transparent);
 
@@ -266,9 +266,9 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .quote { border-radius: 40px; padding: 32px; }
 .quote p { font-family: var(--font-heading); font-size: 21px; line-height: 1.32; }
 .quote cite { display: block; margin-top: 20px; font-size: 14px; font-style: normal; color: color-mix(in srgb, var(--text) 70%, transparent); }
-.quote-1 { background: var(--plum-100); }
+.quote-1 { background: var(--surface); }
 .quote-2 { background: var(--surface); }
-.quote-3 { background: var(--sage-200); }
+.quote-3 { background: var(--surface); }
 
 /* — KKK — */
 .faq { display: grid; gap: 4px; }
