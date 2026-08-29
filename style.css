@@ -118,11 +118,11 @@ a:hover { color: var(--plum-600); }
 .tag-neutral { background: var(--surface); color: color-mix(in srgb, var(--text) 80%, transparent); }
 
 /* — tume plokk (hero ja kontakt) — */
-.dark { background: var(--plum-800); color: var(--plum-100); }
+.dark { background: var(--plum-800); color: var(--plum-200); }
 .dark a:not(.btn) { color: var(--plum-300); }
 .dark a.btn-light { color: var(--plum-900); }
 .dark a.btn-primary { color: var(--plum-100); }
-.dark .muted { color: rgba(248, 241, 250, 0.82); }
+.dark .muted { color: rgba(236, 220, 240, 0.82); }
 
 /* — navigatsioon — */
 .nav {
@@ -145,7 +145,7 @@ a:hover { color: var(--plum-600); }
 .hero-role-sub {
   margin-top: 10px; font-size: clamp(14px, 1.5vw, 19px);
   text-transform: uppercase; letter-spacing: 0.3em;
-  color: rgba(248, 241, 250, 0.72);
+  color: rgba(236, 220, 240, 0.72);
 }
 .hero-grid {
   max-width: var(--maxw); margin: 0 auto;
@@ -250,9 +250,9 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .input:focus-visible { border-color: var(--plum-600); outline-offset: 0; }
 .field { display: grid; gap: 6px; }
 .field label { font-size: 14px; color: color-mix(in srgb, var(--text) 72%, transparent); }
-.dark .field label { color: rgba(248, 241, 250, 0.8); }
-.dark .input { background: rgba(248, 241, 250, 0.08); border-color: rgba(248, 241, 250, 0.3); color: var(--plum-100); }
-.dark .input::placeholder { color: rgba(248, 241, 250, 0.5); }
+.dark .field label { color: rgba(236, 220, 240, 0.8); }
+.dark .input { background: rgba(248, 241, 250, 0.08); border-color: rgba(248, 241, 250, 0.3); color: var(--plum-200); }
+.dark .input::placeholder { color: rgba(236, 220, 240, 0.5); }
 
 /* — kliendilood — */
 .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
@@ -303,7 +303,7 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 }
 .contact h2 { font-size: clamp(28px, 3.6vw, 46px); line-height: 1.1; margin-left: -0.028em; }
 .contact form { display: grid; gap: 16px; }
-.foot { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge) 40px; font-size: 14px; color: rgba(248, 241, 250, 0.6); }
+.foot { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge) 40px; font-size: 14px; color: rgba(236, 220, 240, 0.6); }
 
 /* — mobiil — */
 @media (max-width: 860px) {
