@@ -4,7 +4,7 @@ Katrin Kreutzbergi personaaltreeneri koduleht.
 
 ## Kolm keskkonda
 
-1. **Areng** — muudad faile VS Code'is lokaalselt, seejärel `git add -A` ja `git commit`.
+1. **Arendus** — muudad faile VS Code'is lokaalselt, seejärel `git add -A` ja `git commit`.
 2. **Test** — käivita `mine-testi.bat`. Muudatused lähevad aadressile
    https://katrinkreutzbergfitness.github.io/koduleht-test/
 3. **Live** — kui test on üle vaadatud ja heaks kiidetud, käivita `mine-live.bat`.
