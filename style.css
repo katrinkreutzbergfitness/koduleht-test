@@ -82,6 +82,8 @@ a:hover { color: var(--plum-600); }
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge); }
 .section { padding: clamp(32px, 5vw, 72px) 0; }
 #minust { padding-top: clamp(8px, 1.5vw, 16px); }
+#minust > figure { align-self: stretch; }
+#minust > figure img { height: 100%; aspect-ratio: auto; object-fit: cover; }
 .kicker {
   display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
   font-weight: 700; color: var(--plum-700); margin-bottom: 14px;
