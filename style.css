@@ -29,9 +29,9 @@
   --sage-600: #728157;
   --sage-700: #56633f;
 
-  /* rõhuvärv — neoonroheline */
-  --neon: #d4ff4f;
-  --neon-hover: #c2f52e;
+  /* rõhuvärv — hele roheline */
+  --green: #aceb94;
+  --green-hover: #97e07b;
 
   --font-heading: "Caprasimo", Georgia, serif;
   --font-body: "Figtree", system-ui, sans-serif;
@@ -108,8 +108,8 @@ a:hover { color: var(--plum-600); }
 .btn-ghost:hover { background: var(--plum-100); }
 .btn-light { background: var(--plum-300); color: var(--plum-900); }
 .btn-light:hover { background: var(--plum-200); color: var(--plum-900); }
-.btn-green { background: var(--neon); color: var(--plum-900); }
-.btn-green:hover { background: var(--neon-hover); color: var(--plum-900); }
+.btn-green { background: var(--green); color: var(--plum-900); }
+.btn-green:hover { background: var(--green-hover); color: var(--plum-900); }
 .btn-block { width: 100%; }
 .btn-sm { padding: 9px 20px; font-size: 15px; font-weight: 600; }
 
