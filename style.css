@@ -130,9 +130,9 @@ a:hover { color: var(--plum-600); }
   max-width: var(--maxw); margin: 0 auto; padding: 16px var(--edge) 0;
 }
 .nav .nav-title { font-size: clamp(64px, 8vw, 130px); line-height: 1.06; margin: 0 0 0 -0.028em; margin-right: auto; align-self: flex-start; }
-.nav a { color: var(--plum-200); text-decoration: none; font-size: 15px; }
-.nav a:hover { color: #fff; }
-.nav a.btn { color: var(--plum-900); white-space: nowrap; }
+.nav > a { color: var(--plum-200); text-decoration: none; font-size: 15px; }
+.nav > a:hover { color: #fff; }
+.nav > a.btn { color: var(--plum-900); white-space: nowrap; }
 
 /* — hero — */
 .hero { border-radius: 0 0 var(--radius-lg) var(--radius-lg); overflow: hidden; }
