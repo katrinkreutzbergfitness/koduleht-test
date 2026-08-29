@@ -83,7 +83,7 @@ a:hover { color: var(--plum-600); }
 .section { padding: clamp(32px, 5vw, 72px) 0; }
 .kicker {
   display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
-  font-weight: 600; color: var(--plum-700); margin-bottom: 14px;
+  font-weight: 700; color: var(--plum-700); margin-bottom: 14px;
 }
 .h-lg { font-size: clamp(28px, 3.4vw, 44px); margin-left: -0.028em; }
 .h-md { font-size: clamp(26px, 3.2vw, 40px); margin-left: -0.028em; }
