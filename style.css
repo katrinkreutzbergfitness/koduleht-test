@@ -7,7 +7,7 @@
 :root {
   /* ground */
   --bg: #d8bede;
-  --surface: #aceb94;
+  --surface: #c6f2b5;
   --text: #201e1d;
   --divider: color-mix(in srgb, #201e1d 16%, transparent);
 
