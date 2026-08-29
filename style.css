@@ -130,7 +130,7 @@ a:hover { color: var(--plum-600); }
   max-width: var(--maxw); margin: 0 auto; padding: 16px var(--edge) 0;
 }
 .nav .nav-title { font-size: clamp(64px, 8vw, 130px); line-height: 1.06; margin: 0 0 0 -0.028em; margin-right: auto; flex-shrink: 1; min-width: 0; }
-.nav-links { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); flex-shrink: 0; padding-top: 12px; }
+.nav-links { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); flex-shrink: 0; margin-left: auto; padding-top: 12px; }
 .nav > a, .nav-links > a { color: var(--plum-200); text-decoration: none; font-size: 15px; }
 .nav > a:hover, .nav-links > a:hover { color: #fff; }
 .nav > a.btn, .nav-links > a.btn { color: var(--plum-900); white-space: nowrap; }
