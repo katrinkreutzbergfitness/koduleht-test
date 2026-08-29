@@ -81,7 +81,8 @@ a:hover { color: var(--plum-600); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge); }
 .section { padding: clamp(32px, 5vw, 72px) 0; }
-#minust { padding-top: clamp(8px, 1.5vw, 16px); }
+#minust { padding-top: clamp(8px, 1.5vw, 16px); padding-bottom: clamp(12px, 2vw, 24px); }
+#teenused { padding-top: clamp(8px, 1.5vw, 20px); }
 #minust h2 { font-size: clamp(24px, 2.8vw, 36px); }
 #minust > div:last-child { margin-top: 34px; }
 .kicker {
