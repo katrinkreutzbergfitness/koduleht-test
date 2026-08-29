@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogi — Katrin Kreutzberg</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogi — Katrin Kreutzberg</title>
+<meta name="description" content="Treeningust, toitumisest ja motivatsioonist ausalt — ilma imedieetide ja müügijutuga.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a class="logo" href="index.html">Katrin Kreutzberg</a>
-        <ul>
-            <li><a href="minust.html">Minust</a></li>
-            <li><a href="treeningkavad.html">Treeningkavad</a></li>
-            <li><a href="koolitused.html">Koolitused</a></li>
-            <li><a href="blogi.html">Blogi</a></li>
-            <li><a href="treeni-minuga.html">Treeni minuga</a></li>
-        </ul>
-    </nav>
+<section class="hero dark" style="border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" style="text-decoration:none;color:inherit">Katrin Kreutzberg</a>
+    <a href="index.html#minust">Minust</a>
+    <a href="index.html#teenused">Teenused</a>
+    <a href="index.html#koolitused">Koolitused</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="index.html#kontakt" class="btn btn-light btn-sm">Broneeri aeg</a>
+  </nav>
+  <div class="wrap" style="padding-bottom:clamp(40px,6vw,72px)">
+    <h1 style="font-size:clamp(34px,4.6vw,58px);line-height:1.08;margin-left:-0.028em">Blogi</h1>
+    <p class="lead muted" style="max-width:46ch;margin-top:20px">Lugemist, mis ei müü sulle midagi. Treeningust ja toitumisest nii, nagu ma sõbrale räägiksin.</p>
+  </div>
+</section>
 
-    <section class="lehe-pealkiri">
-        <h1>Blogi</h1>
-        <p>Kasulikud nõuanded treeningu, toitumise ja tervisliku eluviisi kohta.</p>
-    </section>
+<div class="wrap">
+  <section class="section posts">
+    <a class="post" href="#">
+      <span class="post-date">12. august</span>
+      <span class="post-title">Kolm põhjust, miks kükk valutab valest kohast</span>
+      <span class="post-min">4 min →</span>
+    </a>
+    <a class="post" href="#">
+      <span class="post-date">28. juuli</span>
+      <span class="post-title">Valgu kogus inimkeeles</span>
+      <span class="post-min">6 min →</span>
+    </a>
+    <a class="post" href="#">
+      <span class="post-date">9. juuli</span>
+      <span class="post-title">Mida teha, kui motivatsioon otsa saab</span>
+      <span class="post-min">5 min →</span>
+    </a>
+    <a class="post" href="#">
+      <span class="post-date">21. juuni</span>
+      <span class="post-title">Kui palju und on tegelikult vaja, et treening mõjuks</span>
+      <span class="post-min">5 min →</span>
+    </a>
+  </section>
 
-    <section class="jaotis">
-        <div class="kaardid">
+  <section class="section">
+    <div class="quotes">
+      <div class="quote quote-1">
+        <p>Tahad, et järgmine postitus vastaks sinu küsimusele?</p>
+        <cite>Kirjuta ja küsi — vastan blogis või e-kirjaga.</cite>
+        <p style="margin-top:20px"><a class="btn btn-primary btn-sm" href="index.html#kontakt">Küsi Katrinilt</a></p>
+      </div>
+    </div>
+  </section>
+</div>
 
-            <div class="kaart">
-                <h3>Blogipostitus 1</h3>
-                <p>Kuupäev: XX.XX.2026</p>
-                <br>
-                <p>Lühikirjeldus postitusest. Mida see käsitleb? Miks see lugejale kasulik on?</p>
-            </div>
-
-            <div class="kaart">
-                <h3>Blogipostitus 2</h3>
-                <p>Kuupäev: XX.XX.2026</p>
-                <br>
-                <p>Lühikirjeldus postitusest. Mida see käsitleb? Miks see lugejale kasulik on?</p>
-            </div>
-
-            <div class="kaart">
-                <h3>Blogipostitus 3</h3>
-                <p>Kuupäev: XX.XX.2026</p>
-                <br>
-                <p>Lühikirjeldus postitusest. Mida see käsitleb? Miks see lugejale kasulik on?</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="riba">
-        <h2>Rohkem tuleb varsti!</h2>
-        <p>Jälgi mind sotsiaalmeedias, et mitte ühtegi nõuannet maha magada.</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Katrin Kreutzberg · Personaaltreener</p>
-    </footer>
+<section class="contact dark">
+  <div class="contact-grid">
+    <div>
+      <h2>Alustame ühest vestlusest</h2>
+      <p class="muted" style="max-width:42ch;margin-top:24px">Esimene 30-minutiline vestlus on tasuta ja ilma müügijutuga.</p>
+      <p style="margin-top:28px"><a href="mailto:katrinkreutzbergfitness@gmail.com">katrinkreutzbergfitness@gmail.com</a></p>
+    </div>
+    <div style="display:flex;align-items:flex-end">
+      <a class="btn btn-light" href="index.html#kontakt">Võta ühendust</a>
+    </div>
+  </div>
+  <div class="foot">© 2026 Katrin Kreutzberg · Personaaltreener</div>
+</section>
 
 </body>
 </html>

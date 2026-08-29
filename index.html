@@ -1,175 +1,390 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrin Kreutzberg — Personaaltreener</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katrin Kreutzberg — personaaltreener Tallinnas ja veebis</title>
+<meta name="description" content="Personaaltreeningud Tallinnas ja treeningkavad veebis. Ilma imedieetide ja süütundeta — kava, mis sinu nädalasse mahub. Esimene vestlus tasuta.">
+<meta property="og:title" content="Katrin Kreutzberg — personaaltreener">
+<meta property="og:description" content="Treening, mis peab vastu ka novembris.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVIGATSIOON -->
-    <nav>
-        <div class="logo">Katrin Kreutzberg</div>
-        <ul>
-            <li><a href="minust.html">Minust</a></li>
-            <li><a href="treeningkavad.html">Treeningkavad</a></li>
-            <li><a href="koolitused.html">Koolitused</a></li>
-            <li><a href="treeni-minuga.html">Treeni minuga</a></li>
-        </ul>
-    </nav>
+<!-- ═══ HERO ═══ -->
+<section class="hero dark">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" style="text-decoration:none;color:inherit">Katrin Kreutzberg</a>
+    <a href="#minust">Minust</a>
+    <a href="#teenused">Teenused</a>
+    <a href="#koolitused">Koolitused</a>
+    <a href="#blogi">Blogi</a>
+    <a href="#kontakt" class="btn btn-light btn-sm">Broneeri aeg</a>
+  </nav>
+  <div class="hero-grid">
+    <div>
+      <span class="hero-pill">Vabu kohti septembris: 3</span>
+      <h1>Treening, mis peab vastu ka novembris.</h1>
+      <p class="lead muted" style="max-width:48ch;margin-top:24px">Personaaltreeningud Tallinnas ja kavad veebis. Ilma imedieetide, süütunde ja kell-viie-ärkamiseta — lihtsalt kava, mis sinu nädalasse mahub.</p>
+      <div class="row">
+        <a href="#kontakt" class="btn btn-light">Tasuta esimene vestlus</a>
+        <a href="#teenused" class="btn" style="border-color:rgba(248,241,250,.45);color:#f8f1fa">Hinnad ja paketid</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <figure class="washed">
+        <img class="ph" src="img/katrin-portree.jpg" alt="Katrin Kreutzberg, personaaltreener" width="800" height="800">
+      </figure>
+    </div>
+  </div>
+</section>
 
-    <!-- PEAJAOTIS (hero) -->
-    <section class="hero">
-        <h1>Tere tulemast!</h1>
-        <h2>Olen Katrin — personaaltreener ja tervislik eluviis on minu kirg.</h2>
-        <p>Aitan sul liikuda, ennast hästi tunda ja jõuda oma eesmärkideni.</p>
-        <a href="teenused.html" class="nupp">Vaata teenuseid</a>
-    </section>
+<div class="wrap">
 
-    <!-- LÜHITUTVUSTUS -->
-    <section class="tutvustus">
-        <h2>Minust</h2>
-        <p>
-            Olen personaaltreener, kes usub, et iga inimene suudab olla oma parima versiooni.
-            Minu lähenemine on praktiline, toetav ja sulle isiklikult kohandatud.
-        </p>
-        <p>
-            Olenemata sellest, kas soovid kaalust alla võtta, lihaseid kasvatada või lihtsalt
-            end paremini tunda — olen siin, et sind aidata.
-        </p>
-    </section>
+  <!-- ═══ NUMBRID ═══ -->
+  <section class="section stats">
+    <div class="stat"><b>9 a</b><span>treenerikogemust</span></div>
+    <div class="stat"><b>240+</b><span>klienti üle Eesti</span></div>
+    <div class="stat"><b class="sage">2–3×</b><span>nädalas piisab</span></div>
+    <div class="stat"><b>0</b><span>imepulbrit müügil</span></div>
+  </section>
 
-    <!-- KÜKIMÄNG -->
-    <section class="loendur-sektsioon">
-        <h2 class="mang-pealkiri">MITU KÜKKI SA SUUDAD 10 SEKUNDIGA TEHA?</h2>
+  <!-- ═══ MINUST ═══ -->
+  <section class="section split" id="minust">
+    <div>
+      <span class="kicker">Minust</span>
+      <h2 class="h-lg">Alustasin ise nullist. Seetõttu tean, kui hirmus see uks on.</h2>
+      <p class="muted" style="max-width:50ch;margin-top:24px">Olen sertifitseeritud personaaltreener ja endine inimene, kes tundis end jõusaalis nagu vale kingaga peol. Minu töö on teha treeningust asi, mida sa ei pea üle elama, vaid mida sa jätkad.</p>
+      <ul class="ticks">
+        <li><i></i><span>Teaduspõhine lähenemine, inimlik tempo</span></li>
+        <li><i></i><span>Kogemus algajate, seljavalu ja sünnitusjärgse taastumisega</span></li>
+        <li><i></i><span>Treeningud kohapeal Tallinnas või täielikult veebis</span></li>
+      </ul>
+      <div class="row" style="gap:8px;margin-top:28px">
+        <span class="tag tag-plum">EKFL tase 5</span>
+        <span class="tag tag-sage">Jõutreening</span>
+        <span class="tag tag-outline">Toitumisnõustamine</span>
+      </div>
+    </div>
+    <figure class="washed">
+      <img class="ph" src="img/treening-1.jpg" alt="Katrin treeningut juhendamas" width="800" height="960">
+    </figure>
+  </section>
 
-        <div class="mang-paigutus">
+  <!-- ═══ TEENUSED ═══ -->
+  <section class="section" id="teenused">
+    <span class="kicker">Teenused ja hinnad</span>
+    <h2 class="h-lg" style="margin-bottom:32px">Kolm viisi koos töötada</h2>
+    <div class="table-scroll">
+      <table class="table">
+        <thead>
+          <tr><th>Pakett</th><th>Mis sisaldub</th><th>Hind</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">Treeningkava</td>
+            <td>12-nädalane kava, videojuhendid, üks korrektuuriring</td>
+            <td class="nowrap">89 €</td>
+            <td><a href="#kontakt" class="btn btn-outline btn-sm">Telli</a></td>
+          </tr>
+          <tr>
+            <td class="name">Personaaltreening 1:1</td>
+            <td>Trenn Tallinnas, tehnika ja progressioon koos<br>10 korra pakett 400 €</td>
+            <td class="nowrap">45 € / trenn</td>
+            <td><a href="#kontakt" class="btn btn-primary btn-sm">Broneeri</a></td>
+          </tr>
+          <tr>
+            <td class="name">Kuupakett + tugi</td>
+            <td>Kava, iganädalane tagasiside, sõnumituge, videokõne kuus</td>
+            <td class="nowrap">129 € / kuu</td>
+            <td><a href="#kontakt" class="btn btn-outline btn-sm">Alusta</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin-top:20px;font-size:15px">Esimene 30-minutiline vestlus on tasuta ja ilma müügijutuga. Kui ma pole sulle õige treener, ütlen seda ausalt.</p>
+  </section>
 
-            <!-- MÄNG -->
-            <div class="mang-pool">
-                <div id="mangEkraan" class="mang-ekraan">
-                    <button class="alusta-nupp" onclick="alustaMang()">ALUSTA MÄNGU</button>
-                </div>
+  <!-- ═══ KOOLITUSED ═══ -->
+  <section class="section" id="koolitused">
+    <span class="kicker">Koolitused</span>
+    <h2 class="h-lg" style="margin-bottom:32px">Tulevad grupid</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="card-kicker">19. september · Tallinn</span>
+        <h3>Jõutreeningu algkursus</h3>
+        <p>Neli õhtut, väike grupp. Õpid põhitõstete tehnika selgeks nii, et saalis pole enam kõhe.</p>
+        <p class="price">75 €</p>
+        <a href="#kontakt" class="btn btn-primary btn-block">Registreeru</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">3. oktoober · Veebis</span>
+        <h3>Toitumine ilma kaalukausita</h3>
+        <p>Kaks tundi praktikat: mida taldrikule panna, kui kalorite lugemine tundub põrgu.</p>
+        <p class="price">35 €</p>
+        <a href="#kontakt" class="btn btn-primary btn-block">Registreeru</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">25. oktoober · Tartu</span>
+        <h3>Selg korda</h3>
+        <p>Liikuvus ja tugevus kontoriseljale. Tuleb võtta matt ja veidi kannatust.</p>
+        <p class="price">85 €</p>
+        <a href="#kontakt" class="btn btn-primary btn-block">Registreeru</a>
+      </article>
+    </div>
+  </section>
+</div>
 
-                <div id="mangAktiivne" class="mang-aktiivne" style="display:none;">
-                    <div class="mang-info">
-                        <span class="countdown-kast">⏱ <span id="countdown">10</span>s</span>
-                        <span class="loendur-arv"><span id="loendur">0</span> kükki</span>
-                    </div>
-                    <div class="loendur-kast">
-                        <button class="kyki-nupp" onclick="loendaKykk()">🏋️ Tee küki!</button>
-                        <div id="inimene" class="inimene">🧍‍♀️</div>
-                    </div>
-                </div>
+<!-- ═══ KÜKIMÄNG ═══ -->
+<section class="game">
+  <div class="game-grid">
+    <div>
+      <span class="kicker">Vahepala</span>
+      <h2 class="h-md">Mitu kükki sa 10 sekundiga teed?</h2>
+      <p class="muted" style="max-width:46ch;margin:8px 0 28px">Klõpsuküki loeb ka. Päris kükke õpetan trennis — ja seal ei saa nuppu vajutada.</p>
 
-                <div id="tulemusEkraan" class="tulemus-ekraan" style="display:none;">
-                    <p class="tulemus-tekst">Sinu tulemus: <span id="lopptulemus"></span> kükki! 🎉</p>
-                    <div class="nimi-kast">
-                        <input type="text" id="nimiSisend" class="nimi-sisend" placeholder="Sinu nimi" maxlength="20">
-                        <button class="alusta-nupp" onclick="salvestaTulemus()">SALVESTA</button>
-                    </div>
-                    <button class="uuesti-nupp" onclick="laeManguUuesti()">MÄNGI UUESTI</button>
-                </div>
-            </div>
-
-            <!-- EDETABEL -->
-            <div class="edetabel-pool">
-                <h3 class="edetabel-pealkiri">🏆 EDETABEL</h3>
-                <ol id="edetabel" class="edetabel-nimekiri"></ol>
-            </div>
-
+      <div class="panel game-stage">
+        <!-- ootel -->
+        <div class="game-row" id="mangOotel">
+          <button type="button" class="btn btn-primary" id="alustaNupp">Alusta mängu</button>
+          <span class="figure">🧍‍♀️</span>
         </div>
-    </section>
 
-    <script>
-        var timer = null;
-        var viimaneSkoor = 0;
+        <!-- mäng käib -->
+        <div id="mangAktiivne" hidden>
+          <div class="game-row" style="margin-bottom:20px">
+            <span class="tag tag-neutral" style="font-variant-numeric:tabular-nums"><span id="countdown">10</span> s</span>
+            <span class="game-count" id="loendur">0</span>
+            <span class="game-unit">kükki</span>
+          </div>
+          <div class="game-row">
+            <button type="button" class="btn btn-primary" id="kykkNupp">Tee kükk</button>
+            <span class="figure" id="inimene">🧍‍♀️</span>
+          </div>
+        </div>
 
-        function alustaMang() {
-            document.getElementById('mangEkraan').style.display = 'none';
-            document.getElementById('tulemusEkraan').style.display = 'none';
-            document.getElementById('loendur').innerText = '0';
-            document.getElementById('countdown').innerText = '10';
-            document.getElementById('mangAktiivne').style.display = 'block';
+        <!-- tulemus -->
+        <div id="mangTulemus" hidden>
+          <p class="h-sm" style="font-family:var(--font-heading)">Sinu tulemus: <span id="lopptulemus">0</span> kükki</p>
+          <p class="muted" id="hinnang" style="margin:8px 0 20px"></p>
+          <div class="game-row" style="gap:13px">
+            <input class="input" type="text" id="nimiSisend" placeholder="Sinu nimi" maxlength="20" style="width:auto;min-width:170px">
+            <button type="button" class="btn btn-primary" id="salvestaNupp">Salvesta</button>
+            <button type="button" class="btn btn-ghost" id="uuestiNupp">Mängi uuesti</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            var aeg = 10;
-            timer = setInterval(function() {
-                aeg--;
-                document.getElementById('countdown').innerText = aeg;
-                if (aeg <= 0) {
-                    clearInterval(timer);
-                    lopetaMang();
-                }
-            }, 1000);
-        }
+    <div class="panel">
+      <h3 style="font-size:20px;margin-bottom:16px">Edetabel</h3>
+      <ol class="board" id="edetabel"></ol>
+    </div>
+  </div>
+</section>
 
-        function loendaKykk() {
-            if (!timer) return;
-            var arv = parseInt(document.getElementById('loendur').innerText);
-            document.getElementById('loendur').innerText = arv + 1;
+<div class="wrap">
 
-            var inimene = document.getElementById('inimene');
-            inimene.classList.remove('kykk-animatsioon');
-            void inimene.offsetWidth;
-            inimene.classList.add('kykk-animatsioon');
-        }
+  <!-- ═══ KLIENDILOOD ═══ -->
+  <section class="section">
+    <span class="kicker">Kliendilood</span>
+    <div class="quotes" style="margin-top:24px">
+      <blockquote class="quote quote-1">
+        <p>„Käisin varem trennis kaks nädalat aastas. Nüüd olen käinud kaks aastat järjest.“</p>
+        <cite>Mari, 34 · klient 2 aastat</cite>
+      </blockquote>
+      <blockquote class="quote quote-2">
+        <p>„Seljavalu kadus kuue nädalaga. Nüüd valutavad ainult reied pärast esmaspäevi.“</p>
+        <cite>Priit, 41 · kaugjuhendamine</cite>
+      </blockquote>
+      <blockquote class="quote quote-3">
+        <p>„Katrin ei häbistanud mind kordagi. Selle eest võiks ta medali saada.“</p>
+        <cite>Liis, 29 · treeningkava</cite>
+      </blockquote>
+    </div>
+  </section>
 
-        function lopetaMang() {
-            viimaneSkoor = parseInt(document.getElementById('loendur').innerText);
-            document.getElementById('lopptulemus').innerText = viimaneSkoor;
-            document.getElementById('nimiSisend').value = '';
-            document.getElementById('mangAktiivne').style.display = 'none';
-            document.getElementById('tulemusEkraan').style.display = 'block';
-            timer = null;
-        }
+  <!-- ═══ KKK ═══ -->
+  <section class="section split" style="align-items:start">
+    <div>
+      <span class="kicker">KKK</span>
+      <h2 class="h-sm">Küsimused, mis enne alustamist tekivad</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Ma pole kunagi trennis käinud. Kas on liiga hilja?<i>+</i></summary>
+        <p>Ei. Enamik mu kliente alustas nullist. Esimesed nädalad on lihtsad ja tempo selline, et järgmisel päeval saab trepist alla tulla.</p>
+      </details>
+      <details>
+        <summary>Kas pean dieedile minema?<i>+</i></summary>
+        <p>Ei. Teeme paar muudatust, mis päriselt püsivad. Keelatud toitude nimekirja minult ei saa.</p>
+      </details>
+      <details>
+        <summary>Kui palju aega nädalas kulub?<i>+</i></summary>
+        <p>Kaks kuni kolm korda 45–60 minutit. Kava ehitan sinu kalendri järgi, mitte ideaalmaailma järgi.</p>
+      </details>
+      <details>
+        <summary>Kas kuupaketi saab pausile panna?<i>+</i></summary>
+        <p>Saab, igal ajal. Haigus, reis ja elu üldiselt on normaalsed põhjused.</p>
+      </details>
+    </div>
+  </section>
 
-        function salvestaTulemus() {
-            var nimi = document.getElementById('nimiSisend').value.trim();
-            if (!nimi) { nimi = 'Anonüümne'; }
+  <!-- ═══ GALERII ═══ -->
+  <section class="section">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:24px">
+      <h2 class="h-sm">Galerii</h2>
+      <a href="https://instagram.com/" style="font-size:15px">@katrinkreutzberg</a>
+    </div>
+    <div class="gallery">
+      <figure class="washed"><img class="ph" src="img/galerii-1.jpg" alt="Treeningpilt" width="600" height="600"></figure>
+      <figure class="washed"><img class="ph" src="img/galerii-2.jpg" alt="Treeningpilt" width="600" height="600"></figure>
+      <figure class="washed"><img class="ph" src="img/galerii-3.jpg" alt="Treeningpilt" width="600" height="600"></figure>
+      <figure class="washed"><img class="ph" src="img/galerii-4.jpg" alt="Treeningpilt" width="600" height="600"></figure>
+      <figure class="washed wide"><img class="ph" src="img/galerii-5.jpg" alt="Treeningpilt" width="1200" height="600"></figure>
+      <figure class="washed"><img class="ph" src="img/galerii-6.jpg" alt="Treeningpilt" width="600" height="600"></figure>
+    </div>
+  </section>
 
-            var tulemused = JSON.parse(localStorage.getItem('kykiTulemused') || '[]');
-            tulemused.push({ nimi: nimi, skoor: viimaneSkoor });
-            tulemused.sort(function(a, b) { return b.skoor - a.skoor; });
-            tulemused = tulemused.slice(0, 10);
-            localStorage.setItem('kykiTulemused', JSON.stringify(tulemused));
+  <!-- ═══ BLOGI ═══ -->
+  <section class="section" id="blogi">
+    <span class="kicker">Blogi</span>
+    <h2 class="h-md" style="margin-bottom:28px">Lugemist, mis ei müü sulle midagi</h2>
+    <div class="posts">
+      <a class="post" href="blogi.html">
+        <span class="post-date">12. august</span>
+        <span class="post-title">Kolm põhjust, miks kükk valutab valest kohast</span>
+        <span class="post-min">4 min →</span>
+      </a>
+      <a class="post" href="blogi.html">
+        <span class="post-date">28. juuli</span>
+        <span class="post-title">Valgu kogus inimkeeles</span>
+        <span class="post-min">6 min →</span>
+      </a>
+      <a class="post" href="blogi.html">
+        <span class="post-date">9. juuli</span>
+        <span class="post-title">Mida teha, kui motivatsioon otsa saab</span>
+        <span class="post-min">5 min →</span>
+      </a>
+    </div>
+  </section>
+</div>
 
-            uuendaEdetabel();
-            document.getElementById('nimiSisend').disabled = true;
-            document.querySelector('.nimi-kast .alusta-nupp').disabled = true;
-        }
+<!-- ═══ KONTAKT ═══ -->
+<section class="contact dark" id="kontakt">
+  <div class="contact-grid">
+    <div>
+      <h2>Alustame ühest vestlusest</h2>
+      <p class="muted" style="max-width:42ch;margin-top:24px">Kirjuta, mis eesmärk sul on ja palju aega nädalas leiad. Vastan ühe tööpäeva jooksul. Esimene vestlus on tasuta.</p>
+      <p style="margin-top:28px"><a href="mailto:katrinkreutzbergfitness@gmail.com">katrinkreutzbergfitness@gmail.com</a></p>
+      <p style="margin-top:8px;font-size:15px;color:rgba(248,241,250,.7)">Tallinn · treeningud ka veebis</p>
+    </div>
+    <!-- Vormi saatmiseks: asenda action Formspree endpointiga, nt https://formspree.io/f/xxxxxx -->
+    <form action="https://formspree.io/f/SINU_ID" method="POST">
+      <div class="field"><label for="nimi">Nimi</label><input class="input" id="nimi" name="nimi" type="text" placeholder="Mari Maasikas" required></div>
+      <div class="field"><label for="email">E-post</label><input class="input" id="email" name="email" type="email" placeholder="mari@näide.ee" required></div>
+      <div class="field"><label for="soov">Mis sind huvitab?</label><textarea class="input" id="soov" name="soov" rows="3" placeholder="Nt. tahan alustada jõutreeninguga, aega on kaks õhtut nädalas"></textarea></div>
+      <button type="submit" class="btn btn-light btn-block">Saada päring</button>
+    </form>
+  </div>
+  <div class="foot">© 2026 Katrin Kreutzberg · Personaaltreener</div>
+</section>
 
-        function uuendaEdetabel() {
-            var tulemused = JSON.parse(localStorage.getItem('kykiTulemused') || '[]');
-            var nimekiri = document.getElementById('edetabel');
-            nimekiri.innerHTML = '';
-            if (tulemused.length === 0) {
-                nimekiri.innerHTML = '<li class="edetabel-tühi">Veel tulemusi pole</li>';
-                return;
-            }
-            tulemused.forEach(function(kirje) {
-                var li = document.createElement('li');
-                li.className = 'edetabel-rida';
-                li.innerHTML = '<span class="edetabel-nimi">' + kirje.nimi + '</span><span class="edetabel-skoor">' + kirje.skoor + ' kükki</span>';
-                nimekiri.appendChild(li);
-            });
-        }
+<script>
+(function () {
+  var ootel = document.getElementById('mangOotel');
+  var aktiivne = document.getElementById('mangAktiivne');
+  var tulemus = document.getElementById('mangTulemus');
+  var timer = null, skoor = 0, KESTUS = 10;
 
-        function laeManguUuesti() {
-            document.getElementById('tulemusEkraan').style.display = 'none';
-            document.getElementById('mangEkraan').style.display = 'block';
-        }
+  function naita(el) {
+    [ootel, aktiivne, tulemus].forEach(function (x) { x.hidden = x !== el; });
+  }
 
-        uuendaEdetabel();
-    </script>
+  function alusta() {
+    skoor = 0;
+    document.getElementById('loendur').textContent = '0';
+    document.getElementById('countdown').textContent = KESTUS;
+    naita(aktiivne);
+    var aeg = KESTUS;
+    timer = setInterval(function () {
+      aeg--;
+      document.getElementById('countdown').textContent = aeg;
+      if (aeg <= 0) { clearInterval(timer); timer = null; lopeta(); }
+    }, 1000);
+  }
 
-    <!-- JALUS -->
-    <footer>
-        <p>© 2026 Katrin Kreutzberg · Personaaltreener</p>
-    </footer>
+  function kykk() {
+    if (!timer) return;
+    skoor++;
+    document.getElementById('loendur').textContent = skoor;
+    var i = document.getElementById('inimene');
+    i.classList.remove('jump');
+    void i.offsetWidth;
+    i.classList.add('jump');
+  }
 
+  function lopeta() {
+    document.getElementById('lopptulemus').textContent = skoor;
+    document.getElementById('hinnang').textContent =
+      skoor >= 20 ? 'Muljetavaldav. Sõrmed on selgelt vormis.' :
+      skoor >= 10 ? 'Korralik tempo. Päris kükkidega läheks huvitavamaks.' :
+                    'Alustuseks hea. Ülejäänu õpime trennis.';
+    var sisend = document.getElementById('nimiSisend');
+    sisend.value = ''; sisend.disabled = false;
+    document.getElementById('salvestaNupp').disabled = false;
+    naita(tulemus);
+  }
+
+  function loe() {
+    try { return JSON.parse(localStorage.getItem('kykiTulemused') || '[]'); }
+    catch (e) { return []; }
+  }
+
+  function salvesta() {
+    var nimi = document.getElementById('nimiSisend').value.trim() || 'Anonüümne';
+    var list = loe();
+    list.push({ nimi: nimi, skoor: skoor });
+    list.sort(function (a, b) { return b.skoor - a.skoor; });
+    list = list.slice(0, 10);
+    try { localStorage.setItem('kykiTulemused', JSON.stringify(list)); } catch (e) {}
+    uuenda();
+    document.getElementById('nimiSisend').disabled = true;
+    document.getElementById('salvestaNupp').disabled = true;
+  }
+
+  function uuenda() {
+    var list = loe();
+    var ol = document.getElementById('edetabel');
+    ol.innerHTML = '';
+    if (!list.length) {
+      var tyhi = document.createElement('li');
+      tyhi.className = 'empty';
+      tyhi.textContent = 'Veel tulemusi pole. Sinust võib saada esimene.';
+      ol.appendChild(tyhi);
+      return;
+    }
+    list.forEach(function (r, i) {
+      var li = document.createElement('li');
+      var nimi = document.createElement('span');
+      nimi.textContent = (i + 1) + '. ' + r.nimi;
+      var sk = document.createElement('b');
+      sk.textContent = r.skoor + ' kükki';
+      li.appendChild(nimi); li.appendChild(sk);
+      ol.appendChild(li);
+    });
+  }
+
+  document.getElementById('alustaNupp').addEventListener('click', alusta);
+  document.getElementById('kykkNupp').addEventListener('click', kykk);
+  document.getElementById('salvestaNupp').addEventListener('click', salvesta);
+  document.getElementById('uuestiNupp').addEventListener('click', function () { naita(ootel); });
+  uuenda();
+})();
+</script>
 </body>
 </html>

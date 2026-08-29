@@ -1,330 +1,315 @@
-/* =====================
-   ÜLDISED SEADED
-   ===================== */
+/* ==========================================================================
+   Katrin Kreutzberg — personaaltreener
+   Kujundussüsteem: soe kreem + sügav ploomlilla + salveiroheline
+   Ainus stiilifail. Kõik värvid, fondid ja mõõdud tulevad :root muutujatest.
+   ========================================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  /* ground */
+  --bg: #f5ead8;
+  --surface: #ebddc5;
+  --text: #201e1d;
+  --divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  /* aktsent — ploomlilla */
+  --plum-100: #f8f1fa;
+  --plum-200: #ecdcf0;
+  --plum-300: #d8bede;
+  --plum-400: #b995c2;
+  --plum-500: #8e6597;
+  --plum-600: #714a7a;
+  --plum-700: #56355e;
+  --plum-800: #3d2444;
+  --plum-900: #28162d;
+
+  /* teine hääl — salvei */
+  --sage-100: #f0fae1;
+  --sage-200: #e1eecc;
+  --sage-500: #8fa073;
+  --sage-600: #728157;
+  --sage-700: #56633f;
+
+  --font-heading: "Caprasimo", Georgia, serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+
+  --radius-sm: 16px;
+  --radius-md: 28px;
+  --radius-lg: clamp(28px, 6vw, 64px);
+  --pill: 999px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+
+  --edge: clamp(20px, 5vw, 48px);
+  --maxw: 1200px;
 }
+
+/* — alus — */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #fff;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 28px;
+  text-wrap: pretty;
+  overflow-x: clip;
 }
 
-/* =====================
-   NAVIGATSIOON
-   ===================== */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #5C2D6E;
-    color: white;
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0;
 }
+p { margin: 0; }
+img { display: block; max-width: 100%; }
+figure { margin: 0; }
+a { color: var(--plum-700); text-underline-offset: 3px; }
+a:hover { color: var(--plum-600); }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--plum-600); outline-offset: 2px; }
+::selection { background: var(--plum-200); }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge); }
+.section { padding: clamp(32px, 5vw, 72px) 0; }
+.kicker {
+  display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  font-weight: 600; color: var(--plum-700); margin-bottom: 14px;
 }
+.h-lg { font-size: clamp(28px, 3.4vw, 44px); margin-left: -0.028em; }
+.h-md { font-size: clamp(26px, 3.2vw, 40px); margin-left: -0.028em; }
+.h-sm { font-size: clamp(24px, 3vw, 34px); margin-left: -0.028em; }
+.lead { font-size: 18px; line-height: 30px; }
+.muted { color: color-mix(in srgb, var(--text) 78%, transparent); }
+.washed { filter: saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94); }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+/* — nupud — */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-body); font-weight: 700; font-size: 16px; line-height: 1.2;
+  padding: 13px 26px; border-radius: var(--pill); border: 1.5px solid transparent;
+  cursor: pointer; text-decoration: none; transition: background 140ms ease, color 140ms ease;
 }
+.btn-primary { background: var(--plum-700); color: var(--plum-100); }
+.btn-primary:hover { background: var(--plum-600); color: var(--plum-100); }
+.btn-primary:active { background: var(--plum-800); }
+.btn-outline { background: transparent; color: var(--plum-700); border-color: var(--plum-300); }
+.btn-outline:hover { background: var(--plum-100); color: var(--plum-700); }
+.btn-ghost { background: transparent; color: var(--plum-700); }
+.btn-ghost:hover { background: var(--plum-100); }
+.btn-light { background: var(--plum-300); color: var(--plum-900); }
+.btn-light:hover { background: var(--plum-200); color: var(--plum-900); }
+.btn-block { width: 100%; }
+.btn-sm { padding: 9px 20px; font-size: 15px; font-weight: 600; }
 
-nav ul a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
+/* — sildid — */
+.tag {
+  display: inline-flex; align-items: center; font-size: 13px; font-weight: 600;
+  padding: 5px 14px; border-radius: var(--pill);
 }
+.tag-plum { background: var(--plum-100); color: var(--plum-800); }
+.tag-sage { background: var(--sage-200); color: var(--sage-700); }
+.tag-outline { border: 1px solid var(--divider); color: color-mix(in srgb, var(--text) 75%, transparent); }
+.tag-neutral { background: var(--surface); color: color-mix(in srgb, var(--text) 80%, transparent); }
 
-nav ul a:hover {
-    color: #E896B8;
+/* — tume plokk (hero ja kontakt) — */
+.dark { background: var(--plum-800); color: var(--plum-100); }
+.dark a:not(.btn) { color: var(--plum-300); }
+.dark a.btn-light { color: var(--plum-900); }
+.dark a.btn-primary { color: var(--plum-100); }
+.dark .muted { color: rgba(248, 241, 250, 0.82); }
+
+/* — navigatsioon — */
+.nav {
+  display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); flex-wrap: wrap;
+  max-width: var(--maxw); margin: 0 auto; padding: 24px var(--edge);
 }
+.nav-brand { font-family: var(--font-heading); font-size: 22px; margin-right: auto; }
+.nav a { color: var(--plum-200); text-decoration: none; font-size: 15px; }
+.nav a:hover { color: #fff; }
+.nav a.btn { color: var(--plum-900); white-space: nowrap; }
 
-/* =====================
-   PEAJAOTIS (HERO)
-   ===================== */
-
-.hero {
-    background-color: #EDE0F5;
-    text-align: center;
-    padding: 100px 40px;
+/* — hero — */
+.hero { border-radius: 0 0 var(--radius-lg) var(--radius-lg); overflow: hidden; }
+.hero-grid {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: clamp(24px, 4vw, 56px) var(--edge) clamp(48px, 6vw, 88px);
+  display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(32px, 5vw, 48px) clamp(32px, 5vw, 72px); align-items: center;
 }
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
-    color: #2c2c2c;
+.hero h1 { font-size: clamp(38px, 5.4vw, 72px); line-height: 1.06; margin: 24px 0 0 -0.028em; }
+.hero-pill {
+  display: inline-block; background: rgba(248, 241, 250, 0.14); border-radius: var(--pill);
+  padding: 6px 16px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  font-weight: 600; color: var(--plum-200);
 }
-
-.hero h2 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 20px;
-    color: #555;
+.hero-photo { position: relative; }
+.hero-photo::before {
+  content: ""; position: absolute; top: -18px; right: -18px; width: 180px; height: 180px;
+  border-radius: 50%; background: var(--sage-600); opacity: 0.5;
 }
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #666;
+.hero-photo figure {
+  position: relative; border-radius: 50%; overflow: hidden;
+  width: min(400px, 100%); margin-left: auto; aspect-ratio: 1;
 }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.row { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 32px; }
 
-/* NUPP */
-.nupp {
-    background-color: #D4638A;
-    color: white;
-    padding: 14px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 4px;
+/* — pildikohad (kuni päris fotod tulevad) — */
+.ph { background: var(--surface); }
+
+/* — numbrid — */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
+.stat { background: var(--surface); border-radius: var(--radius-md); padding: 24px; }
+.stat b { display: block; font-family: var(--font-heading); font-weight: 400; font-size: 32px; line-height: 38px; color: var(--plum-700); }
+.stat .sage { color: var(--sage-700); }
+.stat span { display: block; font-size: 14px; margin-top: 6px; color: color-mix(in srgb, var(--text) 72%, transparent); }
+
+/* — kaks veergu — */
+.split {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(28px, 4vw, 40px) clamp(32px, 5vw, 72px); align-items: center;
 }
+.split figure { border-radius: 40px; overflow: hidden; }
+.split figure img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; }
+.ticks { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; }
+.ticks li { display: flex; gap: 12px; align-items: flex-start; }
+.ticks i { width: 12px; height: 12px; border-radius: 50%; background: var(--plum-500); margin-top: 8px; flex: none; }
+.ticks li:nth-child(2) i { background: var(--sage-500); }
 
-.nupp:hover {
-    background-color: #B84D74;
+/* — tabel — */
+.table-scroll { overflow-x: auto; border-radius: var(--radius-sm); }
+.table { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 16px; }
+.table th {
+  text-align: left; font-family: var(--font-body); font-size: 13px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--plum-700);
+  padding: 14px 16px; background: var(--plum-100);
 }
+.table th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+.table th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
+.table td { padding: 18px 16px; border-bottom: 1px solid var(--divider); vertical-align: top; }
+.table tr:last-child td { border-bottom: none; }
+.table .nowrap { white-space: nowrap; }
+.table .name { font-weight: 700; }
 
-/* =====================
-   TUTVUSTUS
-   ===================== */
-
-.tutvustus {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 40px;
-    text-align: center;
+/* — kaardid — */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.card {
+  display: flex; flex-direction: column; gap: 10px; background: var(--surface);
+  border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm);
 }
+.card-kicker { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--plum-700); }
+.card h3 { font-size: 22px; }
+.card p { font-size: 16px; color: color-mix(in srgb, var(--text) 80%, transparent); }
+.card .price { font-family: var(--font-heading); font-size: 26px; color: var(--plum-700); margin-top: 4px; }
+.card .btn { margin-top: auto; }
 
-.tutvustus h2 {
-    font-size: 32px;
-    margin-bottom: 24px;
-    color: #2c2c2c;
+/* — kükimäng — */
+.game { background: var(--sage-100); margin: clamp(32px, 5vw, 72px) 0; padding: clamp(32px, 6vw, 80px) 0; border-radius: var(--radius-lg); }
+.game .kicker { color: var(--sage-700); }
+.game-grid {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(24px, 4vw, 40px); align-items: start;
 }
-
-.tutvustus p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 16px;
-}
-
-/* =====================
-   KÜKIKULOENDUR
-   ===================== */
-
-.loendur-sektsioon {
-    text-align: center;
-    padding: 50px 40px;
-    background-color: #f9f4fc;
-}
-
-.mang-pealkiri {
-    font-size: 28px;
-    color: #5C2D6E;
-    margin-bottom: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.loendur-kast {
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.kyki-nupp {
-    background-color: #D4638A;
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.kyki-nupp:hover {
-    background-color: #B84D74;
-}
-
-.loendur-arv {
-    font-size: 22px;
-    font-weight: 600;
-    color: #5C2D6E;
-}
-
-.mang-paigutus {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.mang-pool {
-    min-width: 280px;
-}
-
-.edetabel-pool {
-    min-width: 240px;
-    background-color: white;
-    border-radius: 8px;
-    padding: 24px;
-    box-shadow: 0 2px 12px rgba(92, 45, 110, 0.1);
-}
-
-.edetabel-pealkiri {
-    font-size: 18px;
-    color: #5C2D6E;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-}
-
-.edetabel-nimekiri {
-    padding-left: 20px;
-    margin: 0;
-}
-
-.edetabel-rida {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #EDE0F5;
-    font-size: 15px;
-    color: #333;
-}
-
-.edetabel-nimi {
-    font-weight: 600;
-    color: #5C2D6E;
-}
-
-.edetabel-skoor {
-    color: #D4638A;
-}
-
-.edetabel-tühi {
-    list-style: none;
-    color: #aaa;
-    font-size: 14px;
-}
-
-.nimi-kast {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-}
-
-.nimi-sisend {
-    padding: 12px 16px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid #D4638A;
-    border-radius: 4px;
-    outline: none;
-    width: 180px;
-}
-
-.uuesti-nupp {
-    background: none;
-    border: 2px solid #5C2D6E;
-    color: #5C2D6E;
-    padding: 10px 24px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 8px;
-}
-
-.uuesti-nupp:hover {
-    background-color: #EDE0F5;
-}
-
-.alusta-nupp {
-    background-color: #5C2D6E;
-    color: white;
-    border: none;
-    padding: 16px 40px;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.alusta-nupp:hover {
-    background-color: #7A3D8E;
-}
-
-.mang-ekraan, .tulemus-ekraan {
-    text-align: center;
-}
-
-.mang-aktiivne {
-    text-align: center;
-}
-
-.mang-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 24px;
-}
-
-.countdown-kast {
-    font-size: 28px;
-    font-weight: 700;
-    color: #D4638A;
-}
-
-.tulemus-tekst {
-    font-size: 26px;
-    font-weight: 600;
-    color: #5C2D6E;
-    margin-bottom: 24px;
-}
-
-.inimene {
-    font-size: 48px;
-    display: inline-block;
-    transform-origin: bottom center;
-}
-
+.panel { background: var(--bg); border-radius: var(--radius-md); padding: clamp(20px, 3vw, 36px); }
+.game-stage { min-height: 220px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px; }
+.game-row { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.game-count { font-family: var(--font-heading); font-size: 40px; line-height: 44px; color: var(--plum-700); }
+.game-unit { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--text) 70%, transparent); }
+.figure { font-size: 44px; display: inline-block; }
+.figure.jump { animation: kykk 260ms ease; }
 @keyframes kykk {
-    0%   { transform: scaleY(1) translateY(0); }
-    30%  { transform: scaleY(0.55) translateY(10px); }
-    60%  { transform: scaleY(0.55) translateY(10px); }
-    100% { transform: scaleY(1) translateY(0); }
+  0% { transform: translateY(0) scaleY(1); }
+  40% { transform: translateY(14px) scaleY(0.78); }
+  100% { transform: translateY(0) scaleY(1); }
 }
+.board { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.board li { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; padding: 8px 0; border-bottom: 1px solid var(--divider); }
+.board b { font-variant-numeric: tabular-nums; color: var(--plum-700); }
+.board .empty { border: none; color: color-mix(in srgb, var(--text) 60%, transparent); }
 
-.kykk-animatsioon {
-    animation: kykk 0.6s ease;
+/* — väljad — */
+.input {
+  width: 100%; font: inherit; font-size: 16px; padding: 12px 18px;
+  border: 1px solid var(--divider); border-radius: var(--pill);
+  background: var(--bg); color: var(--text); caret-color: var(--plum-600);
 }
+textarea.input { border-radius: var(--radius-md); resize: vertical; }
+.input:focus-visible { border-color: var(--plum-600); outline-offset: 0; }
+.field { display: grid; gap: 6px; }
+.field label { font-size: 14px; color: color-mix(in srgb, var(--text) 72%, transparent); }
+.dark .field label { color: rgba(248, 241, 250, 0.8); }
+.dark .input { background: rgba(248, 241, 250, 0.08); border-color: rgba(248, 241, 250, 0.3); color: var(--plum-100); }
+.dark .input::placeholder { color: rgba(248, 241, 250, 0.5); }
 
-/* =====================
-   JALUS (FOOTER)
-   ===================== */
+/* — kliendilood — */
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.quote { border-radius: 40px; padding: 32px; }
+.quote p { font-family: var(--font-heading); font-size: 21px; line-height: 1.32; }
+.quote cite { display: block; margin-top: 20px; font-size: 14px; font-style: normal; color: color-mix(in srgb, var(--text) 70%, transparent); }
+.quote-1 { background: var(--plum-100); }
+.quote-2 { background: var(--surface); }
+.quote-3 { background: var(--sage-200); }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #5C2D6E;
-    color: #E8D5F0;
-    font-size: 14px;
+/* — KKK — */
+.faq { display: grid; gap: 4px; }
+.faq details { border-bottom: 1px solid var(--divider); padding: 16px 0; }
+.faq summary {
+  display: flex; justify-content: space-between; gap: 16px; cursor: pointer;
+  font-family: var(--font-heading); font-size: 19px; line-height: 26px; list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary i { color: var(--plum-700); flex: none; font-style: normal; transition: transform 160ms ease; }
+.faq details[open] summary i { transform: rotate(45deg); }
+.faq p { margin-top: 12px; max-width: 60ch; color: color-mix(in srgb, var(--text) 78%, transparent); }
+
+/* — galerii — */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(45%, 160px), 1fr)); gap: clamp(10px, 1.5vw, 14px); }
+.gallery figure { border-radius: 24px; overflow: hidden; }
+.gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.gallery .wide { grid-column: span 2; }
+.gallery .wide img { aspect-ratio: 2 / 1; }
+
+/* — blogi read — */
+.posts { display: grid; }
+.post {
+  display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline;
+  padding: 20px 0; border-top: 1px solid var(--divider);
+  text-decoration: none; color: inherit;
+}
+.posts .post:last-child { border-bottom: 1px solid var(--divider); }
+.post:hover .post-title { color: var(--plum-700); }
+.post-date { font-size: 14px; color: color-mix(in srgb, var(--text) 65%, transparent); flex: none; min-width: 96px; }
+.post-title { font-family: var(--font-heading); font-size: 21px; line-height: 28px; flex: 1 1 240px; }
+.post-min { font-size: 14px; color: var(--plum-700); flex: none; margin-left: auto; }
+
+/* — kontakt ja jalus — */
+.contact { border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin-top: clamp(32px, 5vw, 72px); }
+.contact-grid {
+  max-width: var(--maxw); margin: 0 auto; padding: clamp(40px, 6vw, 88px) var(--edge);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px;
+}
+.contact h2 { font-size: clamp(28px, 3.6vw, 46px); line-height: 1.1; margin-left: -0.028em; }
+.contact form { display: grid; gap: 16px; }
+.foot { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge) 40px; font-size: 14px; color: rgba(248, 241, 250, 0.6); }
+
+/* — mobiil — */
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-photo figure { margin: 0 auto; }
+  .hero-photo::before { width: 120px; height: 120px; }
+  .nav { gap: 10px 16px; }
+  .nav-brand { flex: 1 1 100%; margin-right: 0; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .card { padding: 22px; }
+  .quote { padding: 24px; border-radius: 28px; }
+  .post-min { margin-left: 0; }
 }
