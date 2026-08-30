@@ -87,6 +87,7 @@ a:hover { color: var(--plum-600); }
 #teenused { padding-top: clamp(28px, 3vw, 58px); }
 #teenused h2 { font-size: clamp(22px, 2.7vw, 34px); }
 #treeningkavad { padding-top: clamp(18px, 2.2vw, 34px); }
+#koolitused { padding-bottom: clamp(12px, 2vw, 30px); }
 #toimunud { padding-top: clamp(18px, 2.2vw, 34px); }
 #treeningkavad .card h3 { color: var(--plum-800); }
 #minust h2 { font-size: clamp(24px, 2.8vw, 36px); }
