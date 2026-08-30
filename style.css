@@ -202,8 +202,7 @@ a:hover { color: var(--plum-600); }
 .split figure img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; }
 .ticks { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; }
 .ticks li { display: flex; gap: 12px; align-items: flex-start; }
-.ticks i { width: 12px; height: 12px; border-radius: 50%; background: var(--plum-500); margin-top: 8px; flex: none; }
-.ticks li:nth-child(2) i { background: var(--sage-500); }
+.ticks i { width: 12px; height: 12px; border-radius: 50%; background: var(--surface); margin-top: 8px; flex: none; }
 
 /* — tabel — */
 .table-scroll { overflow-x: auto; border-radius: var(--radius-sm); }
