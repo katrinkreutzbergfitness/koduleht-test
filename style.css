@@ -318,8 +318,9 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .gallery .wide img { aspect-ratio: 2 / 1; }
 
 /* Instagrami postitused */
-.ig-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; align-items: start; }
-.ig-grid .instagram-media { min-width: 0 !important; width: 100% !important; margin: 0 !important; }
+.ig-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+.ig-item { height: 600px; overflow: hidden; border-radius: 12px; background: #fff; }
+.ig-item .instagram-media { min-width: 0 !important; width: 100% !important; margin: 0 !important; border: none !important; box-shadow: none !important; border-radius: 0 !important; }
 
 /* — blogi read — */
 .posts { display: grid; }
