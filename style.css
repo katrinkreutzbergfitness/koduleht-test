@@ -90,6 +90,7 @@ a:hover { color: var(--plum-600); }
 #treeningkavad { padding-top: clamp(18px, 2.2vw, 34px); }
 #koolitused { padding-bottom: clamp(12px, 2vw, 30px); }
 #kliendilood { padding: clamp(18px, 2.2vw, 32px) 0; }
+#blogi { padding: clamp(16px, 2vw, 30px) 0; }
 #toimunud { padding-top: clamp(18px, 2.2vw, 34px); }
 #treeningkavad .card h3 { color: var(--plum-800); }
 #minust h2 { font-size: clamp(24px, 2.8vw, 36px); }
