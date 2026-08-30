@@ -218,6 +218,12 @@ a:hover { color: var(--plum-600); }
 .table tr:last-child td { border-bottom: none; }
 .table .nowrap { white-space: nowrap; }
 .table .name { font-weight: 700; }
+.table .group td {
+  padding: 22px 16px 8px; border-bottom: none;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--plum-700);
+}
+.table .group:first-child td { padding-top: 14px; }
 
 /* — kaardid — */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
