@@ -249,15 +249,15 @@ a:hover { color: var(--plum-600); }
 #toimunud .card-kicker { color: rgba(236, 220, 240, 0.7); }
 
 /* — kükimäng — */
-.game { background: #e2f7d5; margin: clamp(32px, 5vw, 72px) 0; padding: clamp(32px, 6vw, 80px) 0; border-radius: var(--radius-lg); }
+.game { background: #e2f7d5; margin: clamp(24px, 3.5vw, 48px) 0; padding: clamp(24px, 3.5vw, 44px) 0; border-radius: var(--radius-lg); }
 .game .kicker { color: var(--sage-700); }
 .game-grid {
   max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge);
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: clamp(24px, 4vw, 40px); align-items: start;
+  gap: clamp(18px, 2.5vw, 28px); align-items: start;
 }
-.panel { background: var(--bg); border-radius: var(--radius-md); padding: clamp(20px, 3vw, 36px); }
-.game-stage { min-height: 220px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px; }
+.panel { background: var(--bg); border-radius: var(--radius-md); padding: clamp(18px, 2.2vw, 26px); }
+.game-stage { min-height: 140px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px; }
 .game-row { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 .game-count { font-family: var(--font-heading); font-size: 40px; line-height: 44px; color: var(--plum-700); }
 .game-unit { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--text) 70%, transparent); }
