@@ -91,6 +91,7 @@ a:hover { color: var(--plum-600); }
 #koolitused { padding-bottom: clamp(12px, 2vw, 30px); }
 #kliendilood { padding: clamp(18px, 2.2vw, 32px) 0; }
 #blogi { padding: clamp(16px, 2vw, 30px) 0; }
+#kkk { padding: clamp(16px, 2vw, 30px) 0; }
 #toimunud { padding-top: clamp(18px, 2.2vw, 34px); }
 #treeningkavad .card h3 { color: var(--plum-800); }
 #minust h2 { font-size: clamp(24px, 2.8vw, 36px); }
@@ -300,16 +301,17 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .quote-3 { background: var(--pink); }
 
 /* — KKK — */
-.faq { display: grid; gap: 4px; }
+.faq { display: grid; gap: 4px; max-width: 80ch; }
 .faq details { border-bottom: 1px solid var(--divider); padding: 16px 0; }
 .faq summary {
   display: flex; justify-content: space-between; gap: 16px; cursor: pointer;
   font-family: var(--font-heading); font-size: 19px; line-height: 26px; list-style: none;
+  color: var(--plum-800);
 }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary i { color: var(--plum-700); flex: none; font-style: normal; transition: transform 160ms ease; }
 .faq details[open] summary i { transform: rotate(45deg); }
-.faq p { margin-top: 12px; max-width: 60ch; color: color-mix(in srgb, var(--text) 78%, transparent); }
+.faq p { margin-top: 12px; max-width: 60ch; color: color-mix(in srgb, var(--plum-800) 85%, transparent); }
 
 /* — galerii — */
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(12px, 1.6vw, 18px); }
