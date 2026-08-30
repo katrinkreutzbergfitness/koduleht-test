@@ -249,7 +249,7 @@ a:hover { color: var(--plum-600); }
 #toimunud .card-kicker { color: rgba(236, 220, 240, 0.7); }
 
 /* — kükimäng — */
-.game { background: var(--sage-100); margin: clamp(32px, 5vw, 72px) 0; padding: clamp(32px, 6vw, 80px) 0; border-radius: var(--radius-lg); }
+.game { background: #e2f7d5; margin: clamp(32px, 5vw, 72px) 0; padding: clamp(32px, 6vw, 80px) 0; border-radius: var(--radius-lg); }
 .game .kicker { color: var(--sage-700); }
 .game-grid {
   max-width: var(--maxw); margin: 0 auto; padding: 0 var(--edge);
