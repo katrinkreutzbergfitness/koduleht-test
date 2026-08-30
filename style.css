@@ -32,6 +32,7 @@
   /* rõhuvärv — hele roheline */
   --green: #aceb94;
   --green-hover: #97e07b;
+  --pink: #f9e4ea;
 
   --font-heading: "Caprasimo", Georgia, serif;
   --font-body: "Figtree", system-ui, sans-serif;
@@ -88,6 +89,7 @@ a:hover { color: var(--plum-600); }
 #teenused h2 { font-size: clamp(22px, 2.7vw, 34px); }
 #treeningkavad { padding-top: clamp(18px, 2.2vw, 34px); }
 #koolitused { padding-bottom: clamp(12px, 2vw, 30px); }
+#kliendilood { padding: clamp(18px, 2.2vw, 32px) 0; }
 #toimunud { padding-top: clamp(18px, 2.2vw, 34px); }
 #treeningkavad .card h3 { color: var(--plum-800); }
 #minust h2 { font-size: clamp(24px, 2.8vw, 36px); }
@@ -292,9 +294,9 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .quote { border-radius: 40px; padding: 32px; }
 .quote p { font-family: var(--font-heading); font-size: 21px; line-height: 1.32; }
 .quote cite { display: block; margin-top: 20px; font-size: 14px; font-style: normal; color: color-mix(in srgb, var(--text) 70%, transparent); }
-.quote-1 { background: var(--surface); }
-.quote-2 { background: var(--surface); }
-.quote-3 { background: var(--surface); }
+.quote-1 { background: var(--pink); }
+.quote-2 { background: var(--pink); }
+.quote-3 { background: var(--pink); }
 
 /* — KKK — */
 .faq { display: grid; gap: 4px; }
