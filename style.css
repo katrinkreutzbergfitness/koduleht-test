@@ -147,7 +147,7 @@ a:hover { color: var(--plum-600); }
 .dark .muted { color: rgba(236, 220, 240, 0.82); }
 .dark a.mail-pill,
 .mail-pill {
-  display: inline-block; background: var(--plum-100); color: var(--plum-900);
+  display: inline-block; background: var(--plum-300); color: var(--plum-900);
   padding: 8px 18px; border-radius: var(--pill); text-decoration: none;
 }
 .dark a.mail-pill:hover,
