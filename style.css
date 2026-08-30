@@ -339,9 +339,9 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
   text-decoration: none; color: inherit;
 }
 .posts .post:last-child { border-bottom: 1px solid var(--divider); }
-.post:hover .post-title { color: var(--plum-700); }
+.post:hover .post-title { color: var(--plum-600); }
 .post-date { font-size: 14px; color: color-mix(in srgb, var(--text) 65%, transparent); flex: none; min-width: 96px; }
-.post-title { font-family: var(--font-heading); font-size: 21px; line-height: 28px; flex: 1 1 240px; }
+.post-title { font-family: var(--font-heading); font-size: 21px; line-height: 28px; flex: 1 1 240px; color: var(--plum-800); }
 .post-min { font-size: 14px; color: var(--plum-700); flex: none; margin-left: auto; }
 
 /* — kontakt ja jalus — */
