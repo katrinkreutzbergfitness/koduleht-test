@@ -238,6 +238,15 @@ a:hover { color: var(--plum-600); }
 .card .price { font-family: var(--font-heading); font-size: 26px; color: var(--plum-700); margin-top: 4px; }
 .card .btn { margin-top: auto; }
 
+/* koolituste kaardid — hele lilla */
+#koolitused .card { background: var(--plum-100); }
+
+/* toimunud koolitused — tume lilla */
+#toimunud .card { background: var(--plum-800); }
+#toimunud .card h3 { color: var(--plum-200); }
+#toimunud .card p { color: rgba(236, 220, 240, 0.82); }
+#toimunud .card-kicker { color: rgba(236, 220, 240, 0.7); }
+
 /* — kükimäng — */
 .game { background: var(--sage-100); margin: clamp(32px, 5vw, 72px) 0; padding: clamp(32px, 6vw, 80px) 0; border-radius: var(--radius-lg); }
 .game .kicker { color: var(--sage-700); }
