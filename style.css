@@ -215,6 +215,7 @@ a:hover { color: var(--plum-600); }
 .ticks { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; }
 .ticks li { display: flex; gap: 12px; align-items: flex-start; }
 .ticks i { width: 12px; height: 12px; border-radius: 50%; background: var(--plum-800); margin-top: 8px; flex: none; }
+.ticks-green i { background: var(--sage-600); }
 
 /* — tabel — */
 .table-scroll { overflow-x: auto; border-radius: var(--radius-sm); }
