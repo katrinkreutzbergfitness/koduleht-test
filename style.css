@@ -221,7 +221,10 @@ a:hover { color: var(--plum-600); }
 .ticks li { display: flex; gap: 12px; align-items: flex-start; }
 .ticks i { width: 12px; height: 12px; border-radius: 50%; background: var(--plum-800); margin-top: 8px; flex: none; }
 .ticks-green i { background: var(--sage-600); margin-top: 5px; }
-.ticks-green { gap: 6px; }
+.ticks-green {
+  gap: 6px; background: var(--pink); color: var(--plum-800); font-weight: 700;
+  padding: 20px 24px; border-radius: var(--radius-md);
+}
 .ticks-green li { line-height: 22px; }
 
 /* — tabel — */
