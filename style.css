@@ -202,6 +202,8 @@ a:hover { color: var(--plum-600); }
 .stat b { display: block; font-family: var(--font-heading); font-weight: 400; font-size: 32px; line-height: 38px; color: var(--plum-700); }
 .stat .sage { color: var(--sage-700); }
 .stat span { display: block; font-size: 14px; font-weight: 700; margin-top: 6px; color: var(--plum-800); }
+.stat-link { display: inline-block; margin-top: 6px; color: var(--plum-600); text-decoration: none; }
+.stat-link:hover { color: var(--plum-700); text-decoration: underline; }
 
 /* — kaks veergu — */
 .split {
