@@ -107,6 +107,10 @@ a:hover { color: var(--plum-600); }
 .lead { font-size: 17px; line-height: 28px; }
 .muted { color: color-mix(in srgb, var(--text) 78%, transparent); }
 .washed { filter: saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94); }
+.callout {
+  margin-top: 24px; padding: 20px 24px; border-radius: var(--radius-md);
+  background: var(--surface); color: var(--plum-800); font-weight: 700;
+}
 
 /* — nupud — */
 .btn {
