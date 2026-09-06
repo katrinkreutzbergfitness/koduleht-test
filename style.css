@@ -169,7 +169,7 @@ a:hover { color: var(--plum-600); }
 .nav > a.btn, .nav-links > a.btn { color: var(--plum-900); white-space: nowrap; }
 
 /* — hero — */
-.hero { border-radius: 0 0 var(--radius-lg) var(--radius-lg); overflow: hidden; }
+.hero { overflow: hidden; }
 .hero-role {
   font-size: clamp(26px, 3.2vw, 46px);
   line-height: 1.1; text-transform: uppercase; letter-spacing: 0.22em;
@@ -422,6 +422,7 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 
 /* — kerimisel püsiv menüüriba — */
 .stickybar {
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   position: sticky; top: 0; z-index: 50;
   background: var(--plum-800);
   box-shadow: 0 2px 12px color-mix(in srgb, #28162d 22%, transparent);
