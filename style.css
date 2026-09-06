@@ -245,9 +245,17 @@ a:hover { color: var(--plum-600); }
 /* — avanevad hinnagrupid — */
 .pricegroup { border-bottom: 1px solid var(--divider); }
 .pricegroup > summary {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  padding: 14px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 22px 0; cursor: pointer; list-style: none;
 }
+.pg-head {
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap; flex: 1 1 auto;
+}
+.pg-head .tag { font-size: 15px; padding: 9px 20px; flex: none; }
+.pg-desc { font-size: 15px; line-height: 22px; color: color-mix(in srgb, var(--plum-800) 82%, transparent); }
+.alert { color: #b3261e; font-weight: 700; }
+.regains { font-weight: 700; }
+.regains img { display: inline-block; height: 1.15em; width: auto; vertical-align: -0.2em; }
 .pricegroup > summary::-webkit-details-marker { display: none; }
 .pricegroup > summary i {
   font-style: normal; font-size: 20px; color: var(--plum-700);
