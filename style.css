@@ -240,7 +240,7 @@ a:hover { color: var(--plum-600); }
 .table th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
 .table td { padding: 18px 16px; border-bottom: 1px solid var(--divider); vertical-align: top; }
 .table tr:last-child td { border-bottom: none; }
-.table .nowrap { white-space: nowrap; }
+.table .nowrap { white-space: nowrap; color: var(--plum-800); font-weight: 700; }
 .table .name { font-weight: 700; color: var(--plum-800); }
 /* — avanevad hinnagrupid — */
 .pricegroup { border-bottom: 1px solid var(--divider); }
