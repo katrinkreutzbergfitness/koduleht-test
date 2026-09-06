@@ -242,8 +242,26 @@ a:hover { color: var(--plum-600); }
 .table tr:last-child td { border-bottom: none; }
 .table .nowrap { white-space: nowrap; }
 .table .name { font-weight: 700; }
-.table .group td { padding: 26px 16px 10px; border-bottom: none; }
-.table .group:first-child td { padding-top: 18px; }
+/* — avanevad hinnagrupid — */
+.pricegroup { border-bottom: 1px solid var(--divider); }
+.pricegroup > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 0; cursor: pointer; list-style: none;
+}
+.pricegroup > summary::-webkit-details-marker { display: none; }
+.pricegroup > summary i {
+  font-style: normal; font-size: 20px; color: var(--plum-700);
+  transition: transform 160ms ease; flex: none;
+}
+.pricegroup[open] > summary i { transform: rotate(45deg); }
+.pricegroup > summary:hover .tag { background: var(--plum-200); }
+.pricegroup .table-scroll { padding-bottom: 12px; }
+.price-table { table-layout: fixed; min-width: 620px; }
+.price-table td:nth-child(1) { width: 28%; }
+.price-table td:nth-child(2) { width: 40%; }
+.price-table td:nth-child(3) { width: 14%; }
+.price-table td:nth-child(4) { width: 18%; }
+.price-table tr:last-child td { border-bottom: none; }
 
 /* — kaardid — */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
