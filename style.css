@@ -163,7 +163,7 @@ a:hover { color: var(--plum-600); }
   content: "·"; margin-right: 10px; color: var(--plum-400); font-weight: 400;
 }
 .nav-links > a.btn { margin-left: 18px; }
-.nav > a, .nav-links > a { color: var(--plum-200); text-decoration: none; font-size: 15px; }
+.nav > a, .nav-links > a { color: var(--plum-300); text-decoration: none; font-size: 15px; }
 .nav > a:not(.btn), .nav-links > a:not(.btn) { text-transform: uppercase; font-weight: 700; }
 .nav > a:hover, .nav-links > a:hover { color: #fff; }
 .nav > a.btn, .nav-links > a.btn { color: var(--plum-900); white-space: nowrap; }
@@ -434,7 +434,7 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 }
 .stickybar-name {
   font-family: var(--font-heading); font-size: 21px; line-height: 1.1;
-  color: var(--plum-200); text-decoration: none; margin-right: auto;
+  color: var(--plum-300); text-decoration: none; margin-right: auto;
 }
 .stickybar-name:hover { color: #fff; }
 .stickybar .nav-links { padding-top: 0; }
