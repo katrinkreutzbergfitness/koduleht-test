@@ -273,6 +273,7 @@ a:hover { color: var(--plum-600); }
 .pricegroup[open] > summary i { transform: rotate(45deg); }
 .pricegroup > summary:hover .tag { background: var(--plum-200); }
 .pricegroup .table-scroll { padding-bottom: 12px; }
+.price-table .muted strong { display: inline-block; margin-top: 6px; color: var(--plum-800); }
 .price-table { table-layout: fixed; min-width: 620px; }
 .price-table td:nth-child(1) { width: 28%; }
 .price-table td:nth-child(2) { width: 40%; }
