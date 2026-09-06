@@ -351,7 +351,7 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .quote-3 { background: var(--pink); }
 
 /* — KKK — */
-.faq { display: grid; gap: 4px; max-width: 80ch; }
+.faq { display: grid; gap: 4px; }
 .faq details { border-bottom: 1px solid var(--divider); padding: 16px 0; }
 .faq summary {
   display: flex; justify-content: space-between; gap: 16px; cursor: pointer;
