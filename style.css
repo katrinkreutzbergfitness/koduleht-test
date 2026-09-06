@@ -352,10 +352,10 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 
 /* — KKK — */
 .faq { display: grid; gap: 4px; }
-.faq details { border-bottom: 1px solid var(--divider); padding: 16px 0; }
+.faq details { border-bottom: 1px solid var(--divider); padding: 12px 0; }
 .faq summary {
   display: flex; justify-content: space-between; gap: 16px; cursor: pointer;
-  font-family: var(--font-heading); font-size: 19px; line-height: 26px; list-style: none;
+  font-family: var(--font-heading); font-size: 16px; line-height: 22px; list-style: none;
   color: var(--plum-800);
 }
 .faq summary::-webkit-details-marker { display: none; }
