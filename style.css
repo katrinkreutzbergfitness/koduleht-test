@@ -419,3 +419,23 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
   .quote { padding: 24px; border-radius: 28px; }
   .post-min { margin-left: 0; }
 }
+
+/* — kerimisel püsiv menüüriba — */
+.stickybar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--plum-800);
+  box-shadow: 0 2px 12px color-mix(in srgb, #28162d 22%, transparent);
+}
+.stickybar-inner {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 10px var(--edge);
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.stickybar-name {
+  font-family: var(--font-heading); font-size: 21px; line-height: 1.1;
+  color: var(--plum-200); text-decoration: none; margin-right: auto;
+}
+.stickybar-name:hover { color: #fff; }
+.stickybar .nav-links { padding-top: 0; }
+/* ankrud ei jää riba taha peitu */
+section[id], details[id] { scroll-margin-top: 76px; }
