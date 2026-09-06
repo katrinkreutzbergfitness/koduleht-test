@@ -251,7 +251,10 @@ a:hover { color: var(--plum-600); }
 .pg-head {
   display: flex; align-items: center; gap: 18px; flex-wrap: wrap; flex: 1 1 auto;
 }
-.pg-head .tag { font-size: 15px; padding: 9px 20px; flex: none; }
+.pg-head .tag {
+  font-size: 14px; padding: 9px 20px; flex: none;
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
+}
 .pg-desc { font-size: 15px; line-height: 22px; color: color-mix(in srgb, var(--plum-800) 82%, transparent); }
 .alert { color: #b3261e; font-weight: 700; }
 .reval-logo {
