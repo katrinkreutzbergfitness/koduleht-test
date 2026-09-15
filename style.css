@@ -343,7 +343,16 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 
 /* — kliendilood — */
 .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; align-items: stretch; }
-.quote-3 p { font-size: 14px; line-height: 21px; }
+.readmore summary {
+  display: inline-block; margin-top: 12px; cursor: pointer; list-style: none;
+  font-weight: 700; font-size: 14px; color: var(--plum-700);
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.readmore summary::-webkit-details-marker { display: none; }
+.readmore summary::after { content: "Loe edasi →"; }
+.readmore[open] summary::after { content: "Näita vähem ↑"; }
+.readmore summary:hover { color: var(--plum-900); }
+.readmore p { margin-top: 12px; }
 .quote { border-radius: 40px; padding: 32px; }
 .quote p { font-size: 16px; line-height: 24px; font-weight: 400; color: var(--plum-800); }
 .quote cite { display: block; margin-top: 20px; font-size: 14px; font-style: normal; color: color-mix(in srgb, var(--plum-800) 75%, transparent); }
