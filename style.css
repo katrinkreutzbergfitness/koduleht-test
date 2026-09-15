@@ -356,7 +356,7 @@ textarea.input { border-radius: var(--radius-md); resize: vertical; }
 .quote { border-radius: 40px; padding: 26px; }
 .quote p { font-size: 16px; line-height: 24px; font-weight: 400; color: var(--plum-800); }
 .quote cite { display: block; margin-top: 14px; font-size: 14px; font-style: normal; color: color-mix(in srgb, var(--plum-800) 75%, transparent); }
-.quote-2 p { font-size: 14px; line-height: 21px; }
+.quote-2 p { font-size: 15px; line-height: 22px; }
 .quote-1 { background: var(--pink); }
 .quote-2 { background: var(--pink); }
 .quote-3 { background: var(--pink); }
